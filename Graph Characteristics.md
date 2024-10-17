@@ -16,12 +16,12 @@
 
 ### Finding Answers through Traversal:
 
-- Let’s say you want to find the shortest path between **Karachi** and **Peshawar**. The graph needs to be **traversed**—meaning, follow the roads (relationships) between the cities (nodes).
+- Let’s say you want to find the shortest path between **Karachi** and **Peshawar**. The graph needs to be **traversed**—meaning, follow the roads (relationships/edges) between the cities (nodes).
 - Different algorithms, such as **Dijkstra’s** or **A***, consider **weights** (like distance or cost) to help you figure out the best route.
 
 ### Performance in Traversal:
 
-- **Cypher** (Neo4j’s query language) is optimized to traverse nodes without rechecking the same relationship, making it faster to find answers.
+- **Cypher** (Neo4j’s query language) is optimized to traverse nodes without rechecking the same relationship/edges, making it faster to find answers.
 
 ---
 
