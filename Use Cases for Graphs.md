@@ -33,6 +33,14 @@ Traditional e-commerce systems often rely on relational databases (like SQL), wh
 
 Finding products in a parent-child category hierarchy is complex with traditional databases, requiring long SQL queries. With Neo4j's Cypher query language, you can retrieve this data efficiently using a short query.
 
+### Cypher Query
+
+```cypher
+MATCH (c:Category)-[:HAS_CHILD|HAS_PRODUCT*1..3]->(p:Product)
+RETURN p.id, p.title, collect(c.name) AS categories
+```
+This query finds products in up to 3 levels of subcategories (like Parent → Child → Product) in just a few lines of code.
+
 ### "People Who Bought Also Bought" Recommendations:
 
 Relational databases require a lot of batch processing to generate these recommendations. Graph databases excel at this task because they only need to traverse a small part of the overall graph. With Neo4j, instead of querying all customers or orders, you start from one product node, traverse the graph through customers who bought it, and check what else they bought. This approach is much faster.
