@@ -4,6 +4,8 @@
 
 Graphs aren't just for math! They're widely used across various industries and applications. Neo4j promotes this concept with the idea that "Graphs are Everywhere." They offer a collection of graphgists (graph models) designed by their engineers and community, serving as examples of how graphs can be used in different applications. These can be used as templates or starting points for developing graph-based applications.
 
+# 1st Use Case
+
 ## Relationships in E-commerce Systems
 
 Here's a breakdown of the key entities in an e-commerce system and their relationships:
